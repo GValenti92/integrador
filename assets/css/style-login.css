@@ -1,0 +1,99 @@
+body {
+  font-family: "Cherry Bomb One", cursive;
+  margin: 0;
+  background: url(../backgrounds/background-login.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  padding: 15px;
+}
+
+.form {
+  width: 50%;
+  margin: 150px 50px;
+  padding: 3px;
+}
+
+h1 {
+  text-align: left;
+  margin: 20px;
+  color: deeppink;
+  font-size: 40px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  width: 92%;
+  padding: 10px;
+  border: none;
+}
+
+form input[type="submit"] {
+  background-color: transparent;
+  color: deeppink;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  margin: 5px 180px;
+  padding: 20px;
+}
+
+.input-cont {
+  margin-bottom: 15px;
+  border: 1px solid deeppink;
+  border-radius: 5px;
+}
+
+.icon {
+  min-width: 30px;
+  text-align: center;
+  color: deepskyblue;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Monomaniac One", sans-serif;
+  color: deepskyblue;
+  margin: 10px 30px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: deeppink;
+  margin: 0 50px;
+}
+
+.info-btn {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 0 40px;
+}
+
+/* Animaciones  */
+
+form input[type="submit"]:hover {
+  background: #fff;
+}
+
+.link:hover {
+  background: #fff;
+}
+
+.info-btn:hover {
+  background: deeppink;
+}

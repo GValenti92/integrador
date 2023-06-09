@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <!---CSS---->
+    <link rel="stylesheet" href="../assets/css/style-login.css" />
+
+    <!---Fontawesome--->
+    <script
+      src="https://kit.fontawesome.com/89281333f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Formulario Login--->
+    <form class="form">
+      <h1>Inicia Sesión</h1>
+
+      <!--Contenedor Inputs-->
+      <div class="container">
+        <div class="input-cont">
+          <!-- Usuario-->
+          <i class="fas fa-user icon"></i>
+          <input type="text" placeholder="Usuario" />
+        </div>
+
+        <!---Contraseña--->
+        <div class="input-cont">
+          <i class="fas fa-key icon"></i>
+          <input type="password" placeholder="Contraseña" />
+        </div>
+      </div>
+
+      <input type="submit" value="Iniciar Sesión" />
+      <p>
+        ¿No tienes cuenta?
+        <a class="link" href="../pages/register.html">Registrate</a>
+      </p>
+    </form>
+    <!-- Volver a la pagina principal-->
+    <div class="info">
+      <a class="info-btn" href="/index.html">Volver al inicio</a>
+    </div>
+  </body>
+</html>
