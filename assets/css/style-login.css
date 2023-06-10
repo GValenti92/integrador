@@ -1,11 +1,11 @@
 body {
-  font-family: "Cherry Bomb One", cursive;
+  font-family: "Chakra Petch", sans-serif;
   margin: 0;
   background: url(../backgrounds/background-login.png);
   background-size: cover;
   background-attachment: fixed;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
