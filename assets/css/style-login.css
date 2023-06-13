@@ -10,6 +10,26 @@ body {
   box-sizing: border-box;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.icon-nav {
+  width: 80px;
+  font-size: 30px;
+  text-align: center;
+  color: deepskyblue;
+}
+
 .container {
   width: 50%;
   padding: 15px;
@@ -94,6 +114,6 @@ form input[type="submit"]:hover {
   background: #fff;
 }
 
-.info-btn:hover {
+.icon-nav:hover {
   background: deeppink;
 }

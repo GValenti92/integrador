@@ -32,12 +32,7 @@
         <label for="menu-toggle" class="menu-label">
           <i class="fa-solid fa-bars-staggered icon"></i>
         </label>
-        <!-- carrito de compras -->
-        <div class="cont-cart-toggle"></div>
-        <input type="checkbox" id="cart-toggle" />
-        <label for="cart-toggle" class="cart-label">
-          <i class="fa-solid fa-cart-shopping icon"></i>
-        </label>
+        
         <!--Acá arranca el menú-->
         <ul class="navbar-list">
           <li class="link"><a href="#Hero">Inicio</a></li>
@@ -51,6 +46,91 @@
             <a href="./pages/register.html" class="btn">Registrate</a>
           </div>
         </ul>
+
+        <!-- carrito de compras -->
+        <div class="cont-cart-toggle"></div>
+        <input type="checkbox" id="cart-toggle" />
+        <label for="cart-toggle" class="cart-label">
+          <i class="fa-solid fa-cart-shopping icon"></i>
+        </label>
+        <!--- Agrego los productos al carrito de compras-->
+        <div class="cart">
+          <h2>Tus productos</h2>
+
+          <div class="cart-item">
+            <img src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png" alt="productos del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Motherboard</h3>
+              <p class="item-text">Asus prime Z690-PWIFID4C LGA1700</p>
+              <span class="item-price">$148.800</span>
+            </div>
+  
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/cards/Micros/i5-12400F.png" alt="productos del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Microprocesador</h3>
+              <p class="item-text">Intel Core i5 12400F LGA1700</p>
+              <span class="item-price">$122.700</span>
+            </div>
+  
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/cards/Cpu Cooling/240CASTLEBLACK.png" alt="productos del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Cpu Cooler</h3>
+              <p class="item-text">DeepCool 240 Castle Black</p>
+              <span class="item-price">$74.700</span>
+            </div>
+  
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/cards/Memorias/corsair-pro-rs.png" alt="productos del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Memorias</h3>
+              <p class="item-text">Corsair Pro Rs DDR4 3600mhz 2x8GB</p>
+              <span class="item-price">$48.360</span>
+            </div>
+  
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          
+        </div>
+
+        <span class="separador"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>$394.560</span>
+        </div>
+        <button class="btn-add">Comprar</button>
+       </div>
+    
       </nav>
     </header>
     <main class="main">
@@ -74,9 +154,32 @@
       </section>
 
       <!--- Sección Productos-->
-      <h2 class="products-title">NUESTROS PRODUCTOS</h2>
       <section id="Products">
-          <!---MotherBoards--->
+        <!--Titulo sección produtos-->
+        <h2 class="products-title">NUESTROS PRODUCTOS</h2>
+        
+        <!--categorías-->
+        <div class="categorias">
+          <h2>Categorias</h2>
+          <div class="categorias-container">
+            <button id="Mother"><a href="#Mother"></a>Mother</button>
+            <button id="Micros"><a href="#Hero"></a>Micros</button>
+            <button id="Cooler"><a href="#Cooler"></a>Cpu Cooler</button>
+            <button id="Ram"><a href="#Ram"></a>Memorias</button>
+            <button id="Discos"><a href="#Discos"></a>Almacenamiento</button>
+            <button id="Psu"><a href="#Psu"></a>Fuentes</button>
+            <button id="Torres"><a href="#Torres"></a>Gabinetes</button>
+            <button id="Vga"><a href="#Vga"></a>Placas de video</button>
+            <button id="Screen"><a href="#Screen"></a>Monitores</button>
+          </div>
+        </div>
+         <!---MotherBoards--->
+       <section id="Mother">
+
+        <h2>Motherbords</h2>
+
+        <div class="products-container">
+         
           <div class="card">
             <img
               class="card-img"
@@ -121,54 +224,64 @@
             <span>EN STOCK</span>
             <button class="card-btn">Comprar</button>
           </div>
+
+       </section>
+      
           <!--- Microprocesadores-->
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Micros/i3-12100F.png"
-              alt="micro intel i3"
-            />
-            <h3 class="card-tittle">Micro intel i3 12100F</h3>
-            <p class="card-text">Precio $63.240</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
+          <section id="Micros">
+            <h2>Microprocesadores</h2>
+            <div class="products-container">
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./assets/cards/Micros/i3-12100F.png"
+                  alt="micro intel i3"
+                />
+                <h3 class="card-tittle">Micro intel i3 12100F</h3>
+                <p class="card-text">Precio $63.240</p>
+                <span>EN STOCK</span>
+                <button class="card-btn">Comprar</button>
+              </div>
+    
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./assets/cards/Micros/i5-12400F.png"
+                  alt="micro intel i5"
+                />
+                <h3 class="card-tittle">Micro intel i5 12400F</h3>
+                <p class="card-text">Precio $122.760</p>
+                <span>EN STOCK</span>
+                <button class="card-btn">Comprar</button>
+              </div>
+    
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./assets/cards/Micros/Rz5-4600G.png"
+                  alt="micro Ryzen 5 4600G"
+                />
+                <h3 class="card-tittle">Micro Ryzen 5 4600G</h3>
+                <p class="card-text">Precio $81.840</p>
+                <span>EN STOCK</span>
+                <button class="card-btn">Comprar</button>
+              </div>
+    
+              <div class="card">
+                <img
+                  class="card-img"
+                  src="./assets/cards/Micros/Rz5-5600G.png"
+                  alt="micro intel Ryzen 5"
+                />
+                <h3 class="card-tittle">Micro Ryzen 5 5600G</h3>
+                <p class="card-text">Precio $102.300</p>
+                <span>EN STOCK</span>
+                <button class="card-btn">Comprar</button>
+              </div>
 
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Micros/i5-12400F.png"
-              alt="micro intel i5"
-            />
-            <h3 class="card-tittle">Micro intel i5 12400F</h3>
-            <p class="card-text">Precio $122.760</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Micros/Rz5-4600G.png"
-              alt="micro Ryzen 5 4600G"
-            />
-            <h3 class="card-tittle">Micro Ryzen 5 4600G</h3>
-            <p class="card-text">Precio $81.840</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Micros/Rz5-5600G.png"
-              alt="micro intel Ryzen 5"
-            />
-            <h3 class="card-tittle">Micro Ryzen 5 5600G</h3>
-            <p class="card-text">Precio $102.300</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
+            </div>
+          </section>
+          
           <!--- Cpu Cooling-->
           <div class="card">
             <img
@@ -312,6 +425,9 @@
             <button class="card-btn">Comprar</button>
           </div>
         </div>
+
+      </div>
+        
       </section>
 
       <!---Sección Servicio Tecnico-->
@@ -355,7 +471,33 @@
       </section>
 
       <!--- Sección Contacto-->
-      <section id="Contact"></section>
+      <section id="Contact">
+        <div class="info-container">
+          <h2>Contactanos</h2>
+          <div class="contact-info-container">
+            <div class="info-column">
+              <h3>Encontranos en los principales shoppings de la ciudad</h3>
+              <p> <i class="fa fa-location-dot icon-info"></i> (Casa Central) Alto Rosario Shopping, Junin 501,Rosario.</p>
+              <p> <i class="fa fa-location-dot icon-info"></i> Portal Rosario Shopping, Nansen 323,Rosario.</p>
+              <p> <i class="fa fa-location-dot icon-info"></i>Paso del Bosque, Av Sorrento 7000,Rosario.</p>
+              <p> <i class="fa fa-location-dot icon-info"></i>Shopping del Siglo, Córrdoba 1643,Rosario.</p>
+
+            </div>
+            <div class="info-column">
+              <h3>Contactanos a tráves de </h3>
+              <p><i class="fa-solid fa-envelopes-bulk icon-info"></i>milobytecomputacion@gmail.com</p>
+              <p><i class="fa-solid fa-mobile-screen-button icon-info"></i>(341) 2805331</p>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebok</a>
+              <a href="##"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+              <a href="#"><i class="fa-brands fa-square-whatsapp"></i>WhatsApp</a>
+              <a href="#"><i class="fa-solid fa-globe"></i>Sitio Oficial</a>
+
+            </div>
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.891632146496!2d-60.671581989306304!3d-32.92746127080872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping!5e0!3m2!1ses!2sar!4v1686623342786!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
     </main>
     <!--- Footer-->
     <footer class="footer">
@@ -364,13 +506,7 @@
           Todos los derechos reservados &copy; 2023 Milo Byte Computación &reg;
         </p>
       </div>
-      <div class="redes">
-        <h2 class="redes-title">Seguinos en nuestras redes</h2>
-        <i class="fa-brands fa-square-twitter icon-footer"></i>
-        <i class="fa-brands fa-square-facebook icon-footer"></i>
-        <i class="fa-brands fa-square-instagram icon-footer"></i>
-        <i class="fa-brands fa-square-whatsapp icon-footer"></i>
-      </div>
+     
     </footer>
   </body>
 </html>
