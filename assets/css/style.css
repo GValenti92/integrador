@@ -32,7 +32,7 @@ body {
 }
 
 .navbar {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -47,11 +47,7 @@ body {
   margin: 10px 30px;
   gap: 30px;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .icon-nav {
   width: 80px;
   font-size: 30px;
@@ -75,6 +71,7 @@ body {
 }
 
 .icon {
+  margin: 0 30px;
   background-color: transparent;
   color: chartreuse;
   font-size: 25px;
@@ -112,7 +109,7 @@ body {
   font-size: 36px;
   text-align: center;
   color: chartreuse;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .about-text {
   text-align: center;
@@ -150,19 +147,16 @@ body {
 .card-img {
   max-width: 300px;
 }
-
-.cont-titles {
-  display: flex;
-  justify-content: flex-end;
-  text-align: center;
-  margin: 10px 20px 0px 20px;
-}
-.products-title {
+.title-products-cont {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+}
+.products-title {
   font-size: 36px;
-  text-align: center;
+  text-align: right;
   color: white;
 }
 
@@ -195,7 +189,7 @@ span {
   align-items: center;
   text-align: center;
   font-size: 30px;
-  background-color: transparent;
+  background-color: orangered;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
@@ -223,14 +217,24 @@ span {
   gap: 20px;
 }
 
-.categorias-container button {
-  font-size: 24px;
-  background-color: transparent;
+.categorias-container > a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #fff;
-  border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
+  text-decoration: none;
+}
+
+.title-cont {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  background-color: transparent;
+  color: #fff;
+  margin: 100px 0;
 }
 
 /*  Servicio Técnico */
@@ -374,7 +378,7 @@ iframe {
 }
 
 /* Animaciones y Transormaciones */
-@keyframes card-img {
+@keyframes hero-title {
   0% {
     transform: scale(1);
   }
@@ -384,19 +388,17 @@ iframe {
 }
 
 /* Uso la animación */
-.card-img {
-  animation: card-img 4s;
+.hero-title {
+  animation: hero-title 4s;
 }
-
-/* Creó la animación  "Scale" Combinando los ejes X e Y*/
 
 /* Transiciones */
 
-.card-img {
+.hero-title {
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 4s;
   transition-timing-function: ease-out;
-  transition-delay: 1s;
+  transition-delay: 2s;
   cursor: pointer;
 }
 .card-img:hover {
