@@ -11,24 +11,24 @@
 body {
   font-family: "Monomaniac One", sans-serif;
   margin: 0;
-  background: url(../backgrounds/background-index.jpeg);
+  background: url(../backgrounds/background-index.png);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
 }
 
 .header {
+  position: fixed;
   width: 100%;
+  height: 9.37rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 10px;
-  gap: 5px;
 }
 
 .logo {
-  width: 180px;
-  height: 150px;
+  width: 11.25rem;
+  height: 9.37rem;
 }
 
 .navbar {
@@ -43,18 +43,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 30px;
-  gap: 30px;
+  margin: 5px;
+  gap: 15px;
 }
 
 .icon-nav {
-  font-size: 30px;
+  font-size: 1.87rem;
   text-align: center;
   color: deepskyblue;
 }
 
 .link a {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: chartreuse;
   text-align: center;
@@ -62,7 +62,7 @@ body {
 
 .btn {
   background-color: transparent;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: chartreuse;
   margin: 0 15px;
@@ -72,7 +72,30 @@ body {
   margin: 0 30px;
   background-color: transparent;
   color: chartreuse;
-  font-size: 25px;
+  font-size: 1.56rem;
+}
+
+/* efecto blur  */
+.overlay {
+  position: absolute;
+  top: 5.62rem;
+  left: 0;
+  height: 100vh;
+  width: 300vh;
+  z-index: 1;
+  background: rgb(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0, 37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+#cart-toggle:checked ~ .overlay {
+  display: block;
 }
 
 /* Hero o portada  */
@@ -86,14 +109,15 @@ body {
 }
 .hero-title {
   text-align: center;
-  font-size: 50px;
+  font-size: 3.12rem;
   font-weight: 700;
   color: chartreuse;
-  margin: 20px;
+  margin: 20px 0;
+  padding-top: 100px;
 }
 .hero-text {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.87rem;
   color: #fff;
   margin-top: 20px;
 }
@@ -107,14 +131,14 @@ body {
   align-items: center;
 }
 .about-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   color: chartreuse;
   margin-top: 100px;
 }
 .about-text {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 30px;
   color: #fff;
 }
@@ -124,7 +148,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px 15px;
+  margin-top: 2.5rem;
 }
 
 .products-container {
@@ -132,7 +156,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px 15px;
+  margin-top: 2.5rem;
 }
 
 .card {
@@ -141,13 +165,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px 80px;
+  margin: 0 80px;
   gap: 10px;
-  max-width: 320px;
+  max-width: 20rem;
 }
 
 .card-img {
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 .title-products-cont {
   width: 90%;
@@ -157,15 +181,15 @@ body {
   margin-top: 100px;
 }
 .products-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   text-align: center;
   color: white;
 }
 
-.card-tittle {
+.card-title {
   background-color: transparent;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
 }
@@ -173,14 +197,14 @@ body {
 .card-text {
   background-color: transparent;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.37rem;
   color: #fff;
 }
 
 span {
   background-color: transparent;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.37rem;
   font-weight: 800;
   color: chartreuse;
 }
@@ -190,7 +214,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.87rem;
   background-color: orangered;
   color: #fff;
   cursor: pointer;
@@ -206,10 +230,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .categorias > h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   background-color: transparent;
   color: orangered;
   text-align: center;
@@ -227,7 +251,7 @@ span {
 }
 
 .categorias-container > a {
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   padding: 10px;
   background-color: #000;
@@ -241,11 +265,11 @@ span {
 .title-cont {
   width: 90%;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.87rem;
   font-weight: 800;
   background-color: transparent;
   color: #fff;
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 /*  Servicio Técnico */
@@ -253,7 +277,7 @@ span {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 15px;
+  margin-top: 40px;
 }
 
 .cont-service {
@@ -261,24 +285,25 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 30px 40px;
-  max-width: 320px;
-  margin-right: 100px;
+  max-width: 20rem;
+  margin: 60px 80px;
 }
 .service-text {
   background-color: transparent;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.37rem;
   color: #fff;
+  margin-top: 30px;
 }
 .service-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #fff;
+  margin-top: 100px;
 }
 .service-info {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 800;
   padding: 25px;
   color: #fff;
@@ -288,7 +313,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.37rem;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
@@ -303,10 +328,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: 6.25rem;
   text-align: center;
   margin-bottom: 20px;
-  width: 300px;
+  width: 12.5rem;
   color: chartreuse;
 }
 
@@ -330,7 +355,9 @@ span {
 }
 
 .info-container h2 {
-  font-size: 30px;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 50px;
 }
 
 .contact-info-container {
@@ -340,7 +367,7 @@ span {
 }
 
 .info-column h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -349,22 +376,22 @@ span {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: chartreuse;
   margin-bottom: 15px;
 }
 
 .icon-info {
-  font-size: 30px;
+  font-size: 1.87rem;
   text-decoration: none;
   color: chartreuse;
   margin-bottom: 15px;
 }
 
 iframe {
-  width: 450px;
-  height: 300px;
+  width: 28.12rem;
+  height: 18.75rem;
   border-radius: 8px;
 }
 .footer {
@@ -375,20 +402,69 @@ iframe {
 }
 
 .copyrigth-text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 800;
   text-align: center;
   color: #fff;
+  margin-bottom: 20px;
 }
 .icon-footer {
-  font-size: 50px;
+  font-size: 3.12rem;
   margin: 20px 10px;
   gap: 15px;
   background-color: transparent;
   color: #fff;
 }
 
-/* Animaciones y Transormaciones */
+/* Hago desaparecer el check del menu-toggle y cart-toggle */
+#menu-toggle,
+#cart-toggle {
+  display: none;
+}
+
+/* oculto los item del carrito */
+.cart {
+  width: 20%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 11.25rem;
+  right: 1;
+  display: none;
+  z-index: 7;
+  color: #fff;
+}
+.cart h2 {
+  color: orangered;
+}
+.item-title {
+  margin-bottom: 10px;
+}
+.item-price {
+  margin-bottom: 10px;
+}
+.item-bid {
+  margin-bottom: 10px;
+  color: orangered;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+/* Oculto el scroll del carrito */
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+#cart-toggle:checked + .cart {
+  display: block;
+}
+.menu-label i {
+  display: none;
+}
+
+/* Animaciones y Transformaciones */
 @keyframes hero-title {
   0% {
     transform: scale(1);
@@ -400,7 +476,7 @@ iframe {
 
 /* Uso la animación */
 .hero-title {
-  animation: hero-title 4s;
+  animation: hero-title 3s;
 }
 
 /* Transiciones */
@@ -410,14 +486,243 @@ iframe {
   transition-duration: 4s;
   transition-timing-function: ease-out;
   transition-delay: 2s;
-  cursor: pointer;
 }
 .card-img:hover {
-  width: 500px;
-  height: 400px;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-out;
-  transition-delay: 2s;
+  transform: scale(1.3);
+  transition: transform 2s ease-in-out;
+  z-index: 2;
   cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 1674px) {
+  /* animacion translate para cuando se utilice el check del cart-toggle */
+  /* creo la animación */
+
+  @keyframes Translate {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+  }
+
+  /* Uso la animación  */
+  #cart-toggle:checked + .cart {
+    animation: Translate 2s;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-label i {
+    display: block;
+  }
+  .navbar-list {
+    width: 20%;
+    padding: 0 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 150px;
+    flex-direction: column;
+    opacity: 0;
+    z-index: 7;
+    left: 0;
+    top: 11.25rem;
+    border-radius: 8px;
+  }
+  #menu-toggle:checked + .navbar-list {
+    opacity: 1;
+  }
+  /* animación translate para cuando se utilice el check del menu-toggle */
+  /* Creo la animación */
+  @keyframes TranslateX {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+  }
+
+  /* Uso la animación  */
+  #menu-toggle:checked + .navbar-list {
+    animation: TranslateX 2s;
+  }
+  /* animacion translate para cuando se utilice el check del cart-toggle */
+  /* creo la animación */
+
+  @keyframes Translate-Cart {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+  }
+
+  /* Uso la animación  */
+  #cart-toggle:checked + .cart {
+    animation: TranslateX 2s;
+  }
+
+  .card-img {
+    width: 14rem;
+  }
+  .cart-item img {
+    width: 7.81rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 8.12rem;
+    height: 6.25rem;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .hero-text {
+    font-size: 1.37rem;
+  }
+  .about-title {
+    font-size: 1.87rem;
+  }
+  .about-text {
+    font-size: 1.37rem;
+  }
+  .categorias > h2 {
+    font-size: 1.87rem;
+  }
+  .categorias-container > a {
+    font-size: 1.12rem;
+  }
+  .card-title {
+    font: size 1.37rem;
+  }
+  .title-cont {
+    font-size: 1.67rem;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
+  .card-btn {
+    font-size: 1.37rem;
+  }
+  .service-title {
+    font-size: 1.87rem;
+  }
+  .service-text {
+    font-size: 1.37rem;
+  }
+  .service-btn {
+    font-size: 1rem;
+  }
+  .info-container h2 {
+    font-size: 1.87rem;
+  }
+  .info-column h3 {
+    font-size: 1.37rem;
+  }
+  .info-column p,
+  .info-column a {
+    font-size: 1.12rem;
+  }
+  iframe {
+    width: 30rem;
+    height: 12rem;
+  }
+  .copyrigth-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 415px) {
+  .icon {
+    font-size: 1.25rem;
+    margin: 0 8px;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-text {
+  }
+  .about-title {
+    font-size: 1.37rem;
+    margin-top: 50px;
+  }
+  .about-text {
+    font-size: 1.12rem;
+  }
+  .title-products-cont {
+    margin-top: 10px;
+  }
+  .products-title {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .categorias-container {
+    margin-top: 25px;
+    gap: 10px;
+  }
+  .categorias-container > a {
+    padding: 5px;
+    border-radius: 15px;
+  }
+  .card {
+    max-width: 10rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-img {
+    max-width: 8rem;
+  }
+  .cont-service {
+    max-width: 14rem;
+    margin: 10px 30px;
+  }
+  .service-title {
+    font-size: 1.5rem;
+  }
+  .icon-service {
+    width: 5rem;
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .service-btn {
+    font-size: 0.87rem;
+  }
+  .contact-info-container {
+    gap: 24px;
+  }
+  .info-container {
+    margin-bottom: 10px;
+  }
+  .info-container h2 {
+    font-size: 1.37rem;
+    margin: 20px 90px;
+  }
+  .info-column h3 {
+    font-size: 1.12rem;
+    margin: 15px 80px;
+  }
+  .info-column p,
+  .info-column a {
+    font-size: 1rem;
+    margin: 25px 60px;
+  }
+  .icon-info {
+    font-size: 1.37rem;
+  }
+  iframe {
+    width: 16rem;
+    height: 10rem;
+  }
+  .copyrigth-text {
+    font-size: 1.12rem;
+  }
 }
