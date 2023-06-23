@@ -73,6 +73,7 @@ body {
   background-color: transparent;
   color: chartreuse;
   font-size: 1.56rem;
+  cursor: pointer;
 }
 
 /* efecto blur  */
