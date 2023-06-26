@@ -36,7 +36,7 @@
         </ul>
         <!--- contenedor enlaces para dirigirse a las páginas de login y register --->
         <div class="cont-btn">
-          <a href="./pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i></a>
+          <a href="./pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i>Login</a>
         </div>
 
         <!--- label e input con el icono del menu para el carrito --->
@@ -50,21 +50,64 @@
          <div class="cart">
           <h2>Tus Productos</h2>
           <div class="cart-item">
-            <img src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png" alt="item del carrito">
+            <img class="card-img" src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png" alt="item del carrito">
             <div class="item-info">
               <h3 class="item-title">Mother Asus Prime Z690</h3>
               <p class="item-bid">Oferta Actual</p>
               <span class="item-price">$148.800</span>
             </div>
           </div>
-          <div class="item-handler"></div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+
+          <div class="cart-item">
+            <img class="card-img" src="./assets/cards/Micros/i5-12400F.png" alt="item del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Micro Intel Core i5-12400F</h3>
+              <p class="item-bid">Oferta Actual</p>
+              <span class="item-price">$122.760</span>
+            </div>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+
+          <div class="cart-item">
+            <img class="card-img" src="./assets/cards/Memorias/VENGEANCE-DDR5-BLK-01.png" alt="item del carrito">
+            <div class="item-info">
+              <h3 class="item-title">Memoria Corsair Vengeance 2x16GB DDR5 5200Mhz</h3>
+              <p class="item-bid">Oferta Actual</p>
+              <span class="item-price">$74.400</span>
+            </div>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$345.960</span>
+          </div>
+          <button class="btn-add">Comprar</button>
          </div>
+
          <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
          <div class="overlay"></div>
-        
       </nav>
     </header>
+
+    <!--- Introducción-->
     <main class="main">
+
       <!--- Sección Hero o Portada --->
       <section id="Hero">
         <h1 class="hero-title">Bienvenidos a Milo Byte Computación</h1>
@@ -661,7 +704,7 @@
             </div>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.891632146496!2d-60.671581989306304!3d-32.92746127080872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping!5e0!3m2!1ses!2sar!4v1686623342786!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.891632146496!2d-60.671581989306304!3d-32.92746127080872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping!5e0!3m2!1ses!2sar!4v1686623342786!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <!--- Footer-->

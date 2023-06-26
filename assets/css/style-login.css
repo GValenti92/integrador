@@ -12,10 +12,11 @@ body {
 
 .header {
   width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.12rem;
 }
 .navbar {
   display: flex;
@@ -24,81 +25,104 @@ body {
   gap: 10px;
 }
 .icon-nav {
-  width: 80px;
-  font-size: 30px;
+  width: 5rem;
+  font-size: 1.87rem;
   text-align: center;
   color: deepskyblue;
 }
 
 .container {
-  width: 50%;
-  padding: 15px;
+  max-width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .form {
-  width: 50%;
-  margin: 150px 50px;
-  padding: 3px;
+  max-width: 100%;
+  position: relative;
+  top: 16.12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 h1 {
-  text-align: left;
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: deeppink;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 form input[type="text"],
 form input[type="password"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.12rem;
   text-align: center;
-  width: 92%;
-  padding: 10px;
+  max-width: 100%;
+  padding: 5px;
   border: none;
 }
 
 form input[type="submit"] {
   background-color: transparent;
   color: deeppink;
-  font-size: 20px;
+  font-size: 1.12rem;
   text-align: center;
   border: none;
   margin: 5px 180px;
   padding: 20px;
+  border: 2px solid deepskyblue;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 deepskyblue;
 }
 
 .input-cont {
   margin-bottom: 15px;
-  border: 1px solid deeppink;
+  border: 2px solid deepskyblue;
   border-radius: 5px;
+  box-shadow: 0 5px 20px 0 deepskyblue;
 }
 
 .icon {
-  min-width: 30px;
+  min-width: 1.87em;
   text-align: center;
   color: deepskyblue;
 }
 
-p {
-  font-size: 20px;
+span {
+  display: flex;
+  justify-content: left;
+  margin-top: 20.5px;
+  padding: 5px;
+  font-size: 1.37rem;
   font-weight: 600;
   font-family: "Monomaniac One", sans-serif;
-  color: deepskyblue;
-  margin: 10px 30px;
+  color: deeppink;
+  box-shadow: 0 10px 20px 0 deeppink;
 }
 
 .link {
+  margin-top: 24px;
+  border: 2px solid deeppink;
+  box-shadow: 0 10px 20px 0 deepskyblue;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.37rem;
   font-weight: bold;
-  color: deeppink;
-  margin: 0 50px;
+  color: deepskyblue;
 }
 
 .info-btn {
-  font-size: 20px;
+  font-size: 1.12rem;
   text-align: center;
   color: #fff;
   margin: 0 40px;
@@ -116,4 +140,108 @@ form input[type="submit"]:hover {
 
 .icon-nav:hover {
   background: deeppink;
+}
+
+/* Responsive  */
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    max-width: 70%;
+    position: relative;
+    top: 16.12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: deeppink;
+    font-size: 2.5rem;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    max-width: 55%;
+    top: 9.37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    color: deeppink;
+    font-size: 2.5rem;
+  }
+}
+
+/* desde 320px hasta 575px */
+@media (min-width: 320px) and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    max-width: 70%;
+    top: 9.37rem;
+    left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    color: deeppink;
+    font-size: 2.5rem;
+  }
+  span {
+    display: flex;
+    justify-content: left;
+    margin-top: 14.5px;
+    padding: 0 65px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    font-family: "Monomaniac One", sans-serif;
+    color: deeppink;
+    box-shadow: 0 10px 20px 0 deeppink;
+  }
 }
