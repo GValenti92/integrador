@@ -14,7 +14,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .header {
@@ -67,7 +67,11 @@ body {
   color: chartreuse;
   margin: 0 15px;
 }
-
+.login {
+  font-size: 1.56rem;
+  color: chartreuse;
+  background-color: transparent;
+}
 .icon {
   margin: 0 30px;
   background-color: transparent;
