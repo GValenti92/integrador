@@ -19,6 +19,10 @@ body {
   align-items: center;
   margin-top: 1.12rem;
 }
+.logo {
+  width: 11.25rem;
+  height: 9.37rem;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -208,6 +212,10 @@ form input[type="submit"]:hover {
 
 /* desde 320px hasta 575px */
 @media (min-width: 320px) and (max-width: 575px) {
+  .logo {
+    width: 9.37rem;
+    height: 7.5rem;
+  }
   .container {
     max-width: 100%;
     display: block;

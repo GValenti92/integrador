@@ -589,6 +589,17 @@ iframe {
     font-weight: 400;
     font-size: 18px;
   }
+  .btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px orangered;
+    color: #fff;
+    font-weight: 400;
+  }
 }
 /* 992px */
 @media (max-width: 992px) {
@@ -684,7 +695,7 @@ iframe {
   .card-text {
     font-size: 1.2rem;
   }
-  span {
+  .item-price {
     font-size: 1.2rem;
   }
   .card-btn {
@@ -718,37 +729,139 @@ iframe {
     font-size: 1.25rem;
   }
 }
-/* desde 320px hasta 411px  */
-@media (min-width: 320px) and (max-width: 411px) {
+/* desde 320px  */
+@media (min-width: 320px) and (max-width: 415px) {
+  .cart {
+    width: 11rem;
+  }
+  .cart > h2 {
+    width: 6rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .cart-item {
+    width: 6rem;
+  }
+  .item-title {
+    width: 6rem;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  .item-bid {
+    width: 6rem;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .item-price {
+    font-size: 1.12rem;
+  }
+  .item-handler {
+    width: 4rem;
+  }
+  .divider {
+    margin-top: 10px;
+    border: 0.5px solid orangered;
+  }
+
+  .cart-total {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 5px;
+    gap: 5px;
+  }
+
+  .cart-total p {
+    color: #fff;
+    font-size: 1.12rem;
+    font-weight: 700;
+  }
+
+  .cart-total span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chartreuse;
+    font-weight: 600;
+    font-size: 1.12rem;
+  }
+  .btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px orangered;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.12rem;
+    font-weight: 400;
+  }
+
+  .link {
+    width: 6rem;
+    margin: 10px 10px;
+  }
+  .link > a {
+    font-size: 1.12rem;
+  }
+  .cont-btn {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 1.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .login {
+    font-size: 1rem;
+    text-align: center;
+    background-color: transparent;
+    color: chartreuse;
+    text-align: center;
+  }
   .icon {
-    font-size: 1.25rem;
-    margin: 0 8px;
+    font-size: 1rem;
+    padding: 5px;
   }
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .hero-text {
+    font-size: 1.18rem;
   }
 
   .about-title {
-    font-size: 1.37rem;
-    margin-top: 50px;
+    font-size: 1.25rem;
+    margin-top: 25px;
   }
   .about-text {
-    font-size: 1.12rem;
+    font-size: 1.18rem;
   }
   .title-products-cont {
+    width: 80%;
     margin-top: 10px;
   }
   .products-title {
-    font-size: 1.5rem;
-    margin-top: 30px;
+    font-size: 1.25rem;
+    margin-top: 15px;
   }
   .categorias-container {
-    margin-top: 25px;
+    margin-top: 20px;
     gap: 10px;
   }
   .categorias-container > a {
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 10px;
+  }
+  .categorias > h2 {
+    font-size: 1.2rem;
+  }
+  .title-cont {
+    font-size: 1.12rem;
   }
   .card {
     max-width: 8rem;
@@ -759,23 +872,28 @@ iframe {
   .card-img {
     max-width: 6rem;
   }
+  #Service {
+    margin-top: 20px;
+  }
   .cont-service {
-    max-width: 14rem;
+    max-width: 12rem;
     margin: 10px 30px;
   }
   .service-title {
-    font-size: 1.5rem;
+    max-width: 68%;
+    font-size: 1.25rem;
   }
   .icon-service {
-    width: 5rem;
-    font-size: 4rem;
+    max-width: 4rem;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
   .service-btn {
     font-size: 0.87rem;
+    padding: 3px;
   }
   #Contact {
-    max-width: 20rem;
+    max-width: 10rem;
     margin: 0;
     padding: 0;
   }
@@ -783,27 +901,34 @@ iframe {
     gap: 24px;
   }
   .info-container {
-    max-width: 350px;
+    max-width: 9.37rem;
     margin: 0 auto;
+    gap: 5px;
   }
   .info-container h2 {
-    font-size: 1.37rem;
-    margin: 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin: 15px;
   }
   .info-column h3 {
-    font-size: 1.12rem;
-    margin: 15px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.18rem;
+    margin: 15px;
   }
   .info-column p,
   .info-column a {
     font-size: 1rem;
-    margin: 25px 60px;
+    margin: 10px;
   }
   .icon-info {
-    font-size: 1.37rem;
+    font-size: 1.3rem;
   }
   iframe {
-    max-width: 21.87rem;
+    max-width: 15rem;
     margin: 0 auto;
     display: block;
   }
