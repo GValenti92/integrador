@@ -14,7 +14,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Chakra Petch", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .header {
@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #000000cc;
 }
 
 .logo {
@@ -88,10 +89,10 @@ body {
   height: 100vh;
   width: 300vh;
   z-index: 1;
-  background: rgb(255, 255, 255, 0.05);
+  background: rgb(0, 0, 0, 0.6);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0, 37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: none;
 }
 
@@ -117,8 +118,7 @@ body {
   font-size: 3.12rem;
   font-weight: 700;
   color: chartreuse;
-  margin: 20px 0;
-  padding-top: 100px;
+  margin-top: 180px;
 }
 .hero-text {
   text-align: center;
@@ -150,10 +150,11 @@ body {
 
 /*  Productos */
 #Products {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .products-container {
@@ -161,7 +162,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 .card {
@@ -266,23 +267,48 @@ span {
   text-decoration: none;
   text-align: center;
 }
+#Mother,
+#Micros,
+#Cooler,
+#Ram,
+#Discos,
+#Psu,
+#Torres,
+#Vga,
+#Screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 .title-cont {
-  width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-size: 1.87rem;
   font-weight: 800;
   background-color: transparent;
   color: #fff;
-  margin: 60px 0;
 }
 
 /*  Servicio Técnico */
 #Service {
   width: 100%;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 40px;
+  gap: 50px;
+}
+.cont-services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .cont-service {
@@ -291,8 +317,8 @@ span {
   justify-content: center;
   align-items: center;
   max-width: 20rem;
-  margin: 60px 80px;
 }
+
 .service-text {
   background-color: transparent;
   text-align: center;
@@ -343,35 +369,37 @@ span {
 /* Contacto */
 #Contact {
   display: flex;
-  padding: 0;
-  margin: 0;
+  flex-direction: column;
+  margin-top: 70px;
   max-width: 100%;
-  justify-content: space-around;
+  justify-content: center;
   background-color: transparent;
   color: #fff;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.info-container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 30px;
-}
-
-.info-container h2 {
+#Contact h2 {
+  text-align: center;
   font-size: 2.25rem;
   font-weight: 800;
   margin-bottom: 50px;
 }
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
 
 .contact-info-container {
   display: flex;
+  justify-content: center;
   gap: 80px;
   flex-wrap: wrap;
+}
+.info-column {
+  width: 30%;
 }
 
 .info-column h3 {
@@ -397,17 +425,23 @@ span {
   margin-bottom: 15px;
 }
 
-iframe {
-  max-width: 100%;
+.mapa {
+  width: 30%;
   margin: 0 auto;
   display: block;
   border-radius: 8px;
+}
+.mapa iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
 }
 .footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 70px;
 }
 
 .copyrigth-text {
@@ -473,7 +507,6 @@ iframe {
 
 /* Oculto el scroll del carrito */
 .cart::-webkit-scrollbar {
-  display: none;
 }
 
 #cart-toggle:checked + .cart {
@@ -541,7 +574,7 @@ iframe {
     width: 11rem;
   }
   .cart-item img {
-    width: 7.81rem;
+    width: 5rem;
   }
   .quantity-handler {
     display: flex;

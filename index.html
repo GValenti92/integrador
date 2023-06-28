@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!----- Tipografía ----->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--header-->
@@ -21,11 +23,11 @@
       <img src="./assets/logo/milo.png" alt="logo-tienda" class="logo" />
 
       <nav class="navbar">
-        <!--- label e input con el icono del menú hamburguesa --->  
-          <label for="menu-toggle" class="menu-label">
-            <i class="fa-solid fa-bars-staggered icon"></i>
-          </label>
-          <input type="checkbox" id="menu-toggle" />
+        <!--- label e input con el icono del menú hamburguesa --->
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars-staggered icon"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <!--Acá arranca el menú-->
         <ul class="navbar-list">
           <li class="link"><a href="#Hero">Inicio</a></li>
@@ -36,21 +38,27 @@
         </ul>
         <!--- contenedor enlaces para dirigirse a las páginas de login y register --->
         <div class="cont-btn">
-          <a class="login" href="./pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i>Login</a>
+          <a class="login" href="./pages/login.html" class="btn"
+            ><i class="fa-solid fa-user icon"></i>Login</a
+          >
         </div>
 
         <!--- label e input con el icono del menu para el carrito --->
 
-          <label for="cart-toggle" class="cart-label">
+        <label for="cart-toggle" class="cart-label">
           <i class="fa-solid fa-cart-shopping icon"></i>
-          </label>
-          <input type="checkbox" id="cart-toggle" />  
-        
-         <!--- agrego el carrito de compras-->
-         <div class="cart">
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <!--- agrego el carrito de compras-->
+        <div class="cart">
           <h2>Tus Productos</h2>
           <div class="cart-item">
-            <img class="card-img" src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png" alt="item del carrito">
+            <img
+              class="card-img"
+              src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png"
+              alt="item del carrito"
+            />
             <div class="item-info">
               <h3 class="item-title">Mother Asus Prime Z690</h3>
               <p class="item-bid">Oferta Actual</p>
@@ -64,7 +72,11 @@
           </div>
 
           <div class="cart-item">
-            <img class="card-img" src="./assets/cards/Micros/i5-12400F.png" alt="item del carrito">
+            <img
+              class="card-img"
+              src="./assets/cards/Micros/i5-12400F.png"
+              alt="item del carrito"
+            />
             <div class="item-info">
               <h3 class="item-title">Micro Intel Core i5-12400F</h3>
               <p class="item-bid">Oferta Actual</p>
@@ -85,16 +97,15 @@
             <span>$271.560</span>
           </div>
           <button class="btn-add">Comprar</button>
-         </div>
+        </div>
 
-         <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
-         <div class="overlay"></div>
+        <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
+        <div class="overlay"></div>
       </nav>
     </header>
 
     <!--- Introducción-->
     <main class="main">
-
       <!--- Sección Hero o Portada --->
       <section id="Hero">
         <h1 class="hero-title">Bienvenidos a Milo Byte Computación</h1>
@@ -117,581 +128,612 @@
       <!--- Sección Productos-->
       <section id="Products">
         <!-- Contenedor Titulo sección productos-->
-        <div class="title-products-cont">   
+        <div class="title-products-cont">
           <h2 class="products-title">NUESTROS PRODUCTOS</h2>
         </div>
-        
+
         <!--categorías-->
         <div class="categorias">
-            <h2>Categorias</h2>
+          <h2>Categorias</h2>
         </div>
-         <div class="categorias-container">
-            <a href="#Mother">Mothers</a>
-            <a href="#Micros">Micros</a>
-            <a href="#Cooler">Coolers</a>
-            <a href="#Ram">Memorias</a>
-            <a href="#Discos">Almacenamiento</a>
-            <a href="#Psu">Fuentes</a>
-            <a href="#Torres">Gabinetes</a>
-            <a href="#Vga">Gpus</a> 
-            <a href="#Screen">Monitores</a>
-          </div>
-         <!---MotherBoards--->
-       <section id="Mother">
+        <div class="categorias-container">
+          <a href="#Mother">Mothers</a>
+          <a href="#Micros">Micros</a>
+          <a href="#Cooler">Coolers</a>
+          <a href="#Ram">Memorias</a>
+          <a href="#Discos">Almacenamiento</a>
+          <a href="#Psu">Fuentes</a>
+          <a href="#Torres">Gabinetes</a>
+          <a href="#Vga">Gpus</a>
+          <a href="#Screen">Monitores</a>
+        </div>
 
-        <h2 class="title-cont">Motherboards</h2>
+        <!---MotherBoards--->
+        <section id="Mother">
+          <h2 class="title-cont">Motherboards</h2>
 
-        <div class="products-container">
-         
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Mother/TUFB450-PLUS2 AM4.png"
-              alt="mother asus tuf b450"
-            />
-            <h3 class="card-title">Mother Asus TUF B450-PLUS2 AM4</h3>
-            <p class="card-text">Precio $63.240</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Mother/B550MDS3HAC-AM4.png"
-              alt="mother gigabyte b550 am4"
-            />
-            <h3 class="card-title">Mother Gigabyte B550MDS3HAC-AM4</h3>
-            <p class="card-text">Precio $65.884</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Mother/a320m-h am4.png"
-              alt="mother gigabyte a320m"
-            />
-            <h3 class="card-title">Mother Gigabyte A320M-H AM4</h3>
-            <p class="card-text">Precio $46.500</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-          <div class="card">
-            <img
-              class="card-img"
-              src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png"
-              alt="mother ASUSPRIME-Z690-PWIFID4C"
-            />
-            <h3 class="card-title">Mother ASUSPRIME-Z690-PWIFID4C</h3>
-            <p class="card-text">Precio $148.800</p>
-            <span>EN STOCK</span>
-            <button class="card-btn">Comprar</button>
-          </div>
-
-       </section>
-      
-          <!--- Microprocesadores-->
-          <section id="Micros">
-            <h2 class="title-cont">Microprocesadores</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Micros/i3-12100F.png"
-                  alt="micro intel i3"
-                />
-                <h3 class="card-title">Micro intel i3 12100F</h3>
-                <p class="card-text">Precio $63.240</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-    
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Micros/i5-12400F.png"
-                  alt="micro intel i5"
-                />
-                <h3 class="card-title">Micro intel i5 12400F</h3>
-                <p class="card-text">Precio $122.760</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-    
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Micros/Rz5-4600G.png"
-                  alt="micro Ryzen 5 4600G"
-                />
-                <h3 class="card-title">Micro Ryzen 5 4600G</h3>
-                <p class="card-text">Precio $81.840</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-    
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Micros/Rz5-5600G.png"
-                  alt="micro intel Ryzen 5"
-                />
-                <h3 class="card-title">Micro Ryzen 5 5600G</h3>
-                <p class="card-text">Precio $102.300</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Mother/TUFB450-PLUS2 AM4.png"
+                alt="mother asus tuf b450"
+              />
+              <h3 class="card-title">Mother Asus TUF B450-PLUS2 AM4</h3>
+              <p class="card-text">Precio $63.240</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-          
-          <!--- Cpu Cooling-->
-          <section id="Cooler">
-            <h2 class="title-cont">Cooler Cpu</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Cpu Cooling/Deepcool360.png"
-                  alt="Cpu Cooling deepcool"
-                />
-                <h3 class="card-title">Cooler Cpu DeepCool Castle360EX</h3>
-                <p class="card-text">Precio $93.000</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Cpu Cooling/240CASTLEBLACK.png"
-                  alt="Cpu Cooling deepcool"
-                />
-                <h3 class="card-title">Cooler Cpu DeepCool Castle240EX</h3>
-                <p class="card-text">Precio $74.400</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-    
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Cpu Cooling/Auraflow X 120.png"
-                  alt="Cpu Cooling deepcool"
-                />
-                <h3 class="card-title">Cooler Cpu ID-Cooling Auraflow X 120</h3>
-                <p class="card-text">Precio $26.040</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Cpu Cooling/ux20001.png"
-                  alt="Cpu Cooler Thermaltake UX200 ARGB
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Mother/B550MDS3HAC-AM4.png"
+                alt="mother gigabyte b550 am4"
+              />
+              <h3 class="card-title">Mother Gigabyte B550MDS3HAC-AM4</h3>
+              <p class="card-text">Precio $65.884</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Mother/a320m-h am4.png"
+                alt="mother gigabyte a320m"
+              />
+              <h3 class="card-title">Mother Gigabyte A320M-H AM4</h3>
+              <p class="card-text">Precio $46.500</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Mother/ASUSPRIME-Z690-PWIFID4C.png"
+                alt="mother ASUSPRIME-Z690-PWIFID4C"
+              />
+              <h3 class="card-title">Mother ASUSPRIME-Z690-PWIFID4C</h3>
+              <p class="card-text">Precio $148.800</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <!--- Microprocesadores-->
+        <section id="Micros">
+          <h2 class="title-cont">Microprocesadores</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Micros/i3-12100F.png"
+                alt="micro intel i3"
+              />
+              <h3 class="card-title">Micro intel i3 12100F</h3>
+              <p class="card-text">Precio $63.240</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Micros/i5-12400F.png"
+                alt="micro intel i5"
+              />
+              <h3 class="card-title">Micro intel i5 12400F</h3>
+              <p class="card-text">Precio $122.760</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Micros/Rz5-4600G.png"
+                alt="micro Ryzen 5 4600G"
+              />
+              <h3 class="card-title">Micro Ryzen 5 4600G</h3>
+              <p class="card-text">Precio $81.840</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Micros/Rz5-5600G.png"
+                alt="micro intel Ryzen 5"
+              />
+              <h3 class="card-title">Micro Ryzen 5 5600G</h3>
+              <p class="card-text">Precio $102.300</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <!--- Cpu Cooling-->
+        <section id="Cooler">
+          <h2 class="title-cont">Cooler Cpu</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Cpu Cooling/Deepcool360.png"
+                alt="Cpu Cooling deepcool"
+              />
+              <h3 class="card-title">Cooler Cpu DeepCool Castle360EX</h3>
+              <p class="card-text">Precio $93.000</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Cpu Cooling/240CASTLEBLACK.png"
+                alt="Cpu Cooling deepcool"
+              />
+              <h3 class="card-title">Cooler Cpu DeepCool Castle240EX</h3>
+              <p class="card-text">Precio $74.400</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Cpu Cooling/Auraflow X 120.png"
+                alt="Cpu Cooling deepcool"
+              />
+              <h3 class="card-title">Cooler Cpu ID-Cooling Auraflow X 120</h3>
+              <p class="card-text">Precio $26.040</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Cpu Cooling/ux20001.png"
+                alt="Cpu Cooler Thermaltake UX200 ARGB
                   "
-                />
-                <h3 class="card-title">Cpu Cooler Thermaltake UX200 ARGB
-                </h3>
-                <p class="card-text">Precio $18.700</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
+              />
+              <h3 class="card-title">Cpu Cooler Thermaltake UX200 ARGB</h3>
+              <p class="card-text">Precio $18.700</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-
-                     <!-- Memorias Ram-->
-          <section id="Ram">
-            <h2 class="title-cont">Memorias</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Memorias/corsair-pro-rs.png"
-                  alt="Memoria Ram Corsair Pro RS DDR4 3600mhz"
-                />
-                <h3 class="card-title">Corsair Pro RS DDR4 2x8GB 3600Mhz</h3>
-                <p class="card-text">Precio $48.360</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Memorias/crucial.png"
-                  alt="Crucial Ballistix 8GB DDR4 3200Mhz Black RGB"
-                />
-                <h3 class="card-title">
-                  Crucial Ballistix 8GB DDR4 3200Mhz Black RGB
-                </h3>
-                <p class="card-text">Precio $22.320</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Memorias/PNY2x8.png"
-                  alt="Memoria PNY XLR8 8GB DDR4 3600Mhz RGB"
-                />
-                <h3 class="card-title">PNY XLR8 2x8GB DDR4 3600Mhz RGB Black</h3>
-                <p class="card-text">Precio $49.920</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Memorias/VENGEANCE-DDR5-BLK-01.png"
-                  alt="CORSAIR VENGEANCE-DDR5-BLK-01"
-                />
-                <h3 class="card-title">
-                  Memoria Corsair Vengeance 2x16GB DDR5 5200Mhz
-                </h3>
-                <p class="card-text">Precio $74.400</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-    
-
-            </div>
-          </section>
-          
-          <!--- Almacenamiento-->
-          <section id="Discos">
-            <h2 class="title-cont">Almacenamiento</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Almacenamiento/hdd.png"
-                  alt="Disco Rigido"
-                />
-                <h3 class="card-title">
-                  Disco Rigido Seagate Barracuda 2TB 7200rpm SATA
-                </h3>
-                <p class="card-text">Precio $22.320</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img class="card-img" src="./assets/cards/Almacenamiento/ssd.png" alt="ssd mx500">
-                <h3 class="card-title"> SSD Crucial MX500 1TB Sata Server</h3> 
-                <p class="card-text">Precio $53.940</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Almacenamiento/m2.png"
-                  alt="Disco Sólido M2"
-                />
-                <h3 class="card-title">SSD Crucial P3 Plus 1TB M.2 Pcie x4</h3>
-                <p class="card-text">Precio $52.080</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Almacenamiento/Disco Usb Seagate Basic 1TB Usb 3.0.png"
-                  alt="Disco Externo"
-                />
-                <h3 class="card-title">Disco Usb Seagate Basic 1TB Usb 3.0</h3>
-                <p class="card-text">Precio $29.016</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-            </div>
-    
           </div>
-            
+        </section>
 
+        <!-- Memorias Ram-->
+        <section id="Ram">
+          <h2 class="title-cont">Memorias</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Memorias/corsair-pro-rs.png"
+                alt="Memoria Ram Corsair Pro RS DDR4 3600mhz"
+              />
+              <h3 class="card-title">Corsair Pro RS DDR4 2x8GB 3600Mhz</h3>
+              <p class="card-text">Precio $48.360</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-          <!--- Fuentes -->
-          <section id="Psu">
-            <h2 class="title-cont">Fuentes</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Fuentes/gf1650w.png"
-                  alt="Fuente thermaltake 650gold"
-                />
-                <h3 class="card-title">
-                  Fuente Thermaltake GF1 650W 80+Gold
-                </h3>
-                <p class="card-text">Precio $45.628</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img class="card-img" src="./assets/cards/Fuentes/psu-gp-p750gm.png" alt="Fuente gigabyte 750">
-                <h3 class="card-title"> Fuente Gigabyte GP-P750GM 750W 80+Gold</h3> 
-                <p class="card-text">Precio $52.360</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Fuentes/HX1200-01.png"
-                  alt="Fuente Corsair HX1200 Platinum"
-                />
-                <h3 class="card-title">Fuente Corsair HX1200 1200W 80+ Platinum</h3>
-                <p class="card-text">Precio $104.720</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Fuentes/RM750x.png"
-                  alt="Fuente Corsair 750 Gold"
-                />
-                <h3 class="card-title">Fuente Corsair RM750X White 80+Gold</h3>
-                <p class="card-text">Precio $65.450</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Memorias/crucial.png"
+                alt="Crucial Ballistix 8GB DDR4 3200Mhz Black RGB"
+              />
+              <h3 class="card-title">
+                Crucial Ballistix 8GB DDR4 3200Mhz Black RGB
+              </h3>
+              <p class="card-text">Precio $22.320</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-    
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Memorias/PNY2x8.png"
+                alt="Memoria PNY XLR8 8GB DDR4 3600Mhz RGB"
+              />
+              <h3 class="card-title">PNY XLR8 2x8GB DDR4 3600Mhz RGB Black</h3>
+              <p class="card-text">Precio $49.920</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Memorias/VENGEANCE-DDR5-BLK-01.png"
+                alt="CORSAIR VENGEANCE-DDR5-BLK-01"
+              />
+              <h3 class="card-title">
+                Memoria Corsair Vengeance 2x16GB DDR5 5200Mhz
+              </h3>
+              <p class="card-text">Precio $74.400</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
           </div>
-            
+        </section>
 
+        <!--- Almacenamiento-->
+        <section id="Discos">
+          <h2 class="title-cont">Almacenamiento</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Almacenamiento/hdd.png"
+                alt="Disco Rigido"
+              />
+              <h3 class="card-title">
+                Disco Rigido Seagate Barracuda 2TB 7200rpm SATA
+              </h3>
+              <p class="card-text">Precio $22.320</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-          <!--- Gabinetes --->
-          <section id="Torres">
-            <h2 class="title-cont">Gabinetes</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Gabinetes/ah_t200_1nw.png"
-                  alt="Gabinete Thermaltake AH T200 Black Matx"
-                />
-                <h3 class="card-title">
-                  Gabinete Thermaltake AH T200 Black Matx
-                </h3>
-                <p class="card-text">Precio $65.824</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img class="card-img" src="./assets/cards/Gabinetes/Corsair iCUE 5000T.png" alt="Gabinete Corsair Icue 5000T">
-                <h3 class="card-title"> Gabinete Corsair iCUE 5000T RGB Black</h3> 
-                <p class="card-text">Precio $187.000</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Gabinetes/DeepCool 50 RGB 4F.png"
-                  alt="Gabinete DeepCool 50 RGB 4F"
-                />
-                <h3 class="card-title">Gabinete DeepCool 50 RGB 4F</h3>
-                <p class="card-text">Precio $44.880</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Gabinetes/purityrgb.png"
-                  alt="Gabinete Cougar Purity RGB MicroAtx"
-                />
-                <h3 class="card-title">Gabinete Cougar Purity RGB MicroAtx</h3>
-                <p class="card-text">Precio $26.554</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Almacenamiento/ssd.png"
+                alt="ssd mx500"
+              />
+              <h3 class="card-title">SSD Crucial MX500 1TB Sata Server</h3>
+              <p class="card-text">Precio $53.940</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-    
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Almacenamiento/m2.png"
+                alt="Disco Sólido M2"
+              />
+              <h3 class="card-title">SSD Crucial P3 Plus 1TB M.2 Pcie x4</h3>
+              <p class="card-text">Precio $52.080</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Almacenamiento/Disco Usb Seagate Basic 1TB Usb 3.0.png"
+                alt="Disco Externo"
+              />
+              <h3 class="card-title">Disco Usb Seagate Basic 1TB Usb 3.0</h3>
+              <p class="card-text">Precio $29.016</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
           </div>
-            
-
+        </section>
+        <!--- Fuentes -->
+        <section id="Psu">
+          <h2 class="title-cont">Fuentes</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Fuentes/gf1650w.png"
+                alt="Fuente thermaltake 650gold"
+              />
+              <h3 class="card-title">Fuente Thermaltake GF1 650W 80+Gold</h3>
+              <p class="card-text">Precio $45.628</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-           <!--- Placas de Video --->
-           <section id="Vga">
-            <h2 class="title-cont">Placas de Video</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/VGA/DUAL3060TIASUS2.png"
-                  alt="Vga Asus Dual OC RTX3060TI 8GB GDDR6X"
-                />
-                <h3 class="card-title">
-                  Vga Asus Dual OC RTX3060TI 8GB GDDR6X
-                </h3>
-                <p class="card-text">Precio $292.468</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img class="card-img" src="./assets/cards/VGA/GB-N2060D6-6GD3.png" alt="Vga Gigabyte RTX2060 6GB">
-                <h3 class="card-title">Vga Gigabyte RTX2060 6GB</h3> 
-                <p class="card-text">Precio $197.472</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/VGA/6700XTEAGLE3.png"
-                  alt="Vga Gigabyte Eagle RX6700XT 12GB"
-                />
-                <h3 class="card-title">Vga Gigabyte Eagle RX6700XT 12GB</h3>
-                <p class="card-text">Precio $245.344</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/VGA/6900XTLC.png"
-                  alt="Vga Asus Rog Strix LC RX6900XT 16GB"
-                />
-                <h3 class="card-title">Vga Asus Rog Strix LC RX6900XT 16GB</h3>
-                <p class="card-text">Precio $392.270</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Fuentes/psu-gp-p750gm.png"
+                alt="Fuente gigabyte 750"
+              />
+              <h3 class="card-title">Fuente Gigabyte GP-P750GM 750W 80+Gold</h3>
+              <p class="card-text">Precio $52.360</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-    
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Fuentes/HX1200-01.png"
+                alt="Fuente Corsair HX1200 Platinum"
+              />
+              <h3 class="card-title">
+                Fuente Corsair HX1200 1200W 80+ Platinum
+              </h3>
+              <p class="card-text">Precio $104.720</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Fuentes/RM750x.png"
+                alt="Fuente Corsair 750 Gold"
+              />
+              <h3 class="card-title">Fuente Corsair RM750X White 80+Gold</h3>
+              <p class="card-text">Precio $65.450</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
           </div>
-            
-
+        </section>
+        <!--- Gabinetes --->
+        <section id="Torres">
+          <h2 class="title-cont">Gabinetes</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Gabinetes/ah_t200_1nw.png"
+                alt="Gabinete Thermaltake AH T200 Black Matx"
+              />
+              <h3 class="card-title">
+                Gabinete Thermaltake AH T200 Black Matx
+              </h3>
+              <p class="card-text">Precio $65.824</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-  
-          <!--- Monitores --->
-          <section id="Screen">
-            <h2 class="title-cont">Monitores</h2>
-            <div class="products-container">
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Monitores/Asus VP249QGR.png"
-                  alt="Monitor Asus VP249QGR 23.8″ IPS 144Hz"
-                />
-                <h3 class="card-title">
-                  Monitor Asus VP249QGR 23.8″ IPS 144Hz
-                </h3>
-                <p class="card-text">Precio $138.380</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img class="card-img" src="./assets/cards/Monitores/gigaG27F.png" alt="Monitor Gigabyte G27F 27″ IPS 144HZ FHD">
-                <h3 class="card-title">Monitor Gigabyte G27F 27″ IPS 144HZ FHD</h3> 
-                <p class="card-text">Precio $167.552</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Monitores/LG 24GL600F-B.png"
-                  alt="Monitor LG 24GL600F-B 23.6″144Hz"
-                />
-                <h3 class="card-title">Monitor LG 24GL600F-B 23.6″144Hz</h3>
-                <p class="card-text">Precio $127.160</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
-              <div class="card">
-                <img
-                  class="card-img"
-                  src="./assets/cards/Monitores/Odyssey G4 25.png"
-                  alt="Monitor Samsung Odyssey G4 25″ IPS 240hz"
-                />
-                <h3 class="card-title">Monitor Samsung Odyssey G4 25″ IPS 240hz</h3>
-                <p class="card-text">Precio $145.860</p>
-                <span>EN STOCK</span>
-                <button class="card-btn">Comprar</button>
-              </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Gabinetes/Corsair iCUE 5000T.png"
+                alt="Gabinete Corsair Icue 5000T"
+              />
+              <h3 class="card-title">Gabinete Corsair iCUE 5000T RGB Black</h3>
+              <p class="card-text">Precio $187.000</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-    
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Gabinetes/DeepCool 50 RGB 4F.png"
+                alt="Gabinete DeepCool 50 RGB 4F"
+              />
+              <h3 class="card-title">Gabinete DeepCool 50 RGB 4F</h3>
+              <p class="card-text">Precio $44.880</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Gabinetes/purityrgb.png"
+                alt="Gabinete Cougar Purity RGB MicroAtx"
+              />
+              <h3 class="card-title">Gabinete Cougar Purity RGB MicroAtx</h3>
+              <p class="card-text">Precio $26.554</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
           </div>
-            
-
+        </section>
+        <!--- Placas de Video --->
+        <section id="Vga">
+          <h2 class="title-cont">Placas de Video</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/VGA/DUAL3060TIASUS2.png"
+                alt="Vga Asus Dual OC RTX3060TI 8GB GDDR6X"
+              />
+              <h3 class="card-title">Vga Asus Dual OC RTX3060TI 8GB GDDR6X</h3>
+              <p class="card-text">Precio $292.468</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
             </div>
-          </section>
-          
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/VGA/GB-N2060D6-6GD3.png"
+                alt="Vga Gigabyte RTX2060 6GB"
+              />
+              <h3 class="card-title">Vga Gigabyte RTX2060 6GB</h3>
+              <p class="card-text">Precio $197.472</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/VGA/6700XTEAGLE3.png"
+                alt="Vga Gigabyte Eagle RX6700XT 12GB"
+              />
+              <h3 class="card-title">Vga Gigabyte Eagle RX6700XT 12GB</h3>
+              <p class="card-text">Precio $245.344</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/VGA/6900XTLC.png"
+                alt="Vga Asus Rog Strix LC RX6900XT 16GB"
+              />
+              <h3 class="card-title">Vga Asus Rog Strix LC RX6900XT 16GB</h3>
+              <p class="card-text">Precio $392.270</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <!--- Monitores --->
+        <section id="Screen">
+          <h2 class="title-cont">Monitores</h2>
+          <div class="products-container">
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Monitores/Asus VP249QGR.png"
+                alt="Monitor Asus VP249QGR 23.8″ IPS 144Hz"
+              />
+              <h3 class="card-title">Monitor Asus VP249QGR 23.8″ IPS 144Hz</h3>
+              <p class="card-text">Precio $138.380</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Monitores/gigaG27F.png"
+                alt="Monitor Gigabyte G27F 27″ IPS 144HZ FHD"
+              />
+              <h3 class="card-title">
+                Monitor Gigabyte G27F 27″ IPS 144HZ FHD
+              </h3>
+              <p class="card-text">Precio $167.552</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Monitores/LG 24GL600F-B.png"
+                alt="Monitor LG 24GL600F-B 23.6″144Hz"
+              />
+              <h3 class="card-title">Monitor LG 24GL600F-B 23.6″144Hz</h3>
+              <p class="card-text">Precio $127.160</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="./assets/cards/Monitores/Odyssey G4 25.png"
+                alt="Monitor Samsung Odyssey G4 25″ IPS 240hz"
+              />
+              <h3 class="card-title">
+                Monitor Samsung Odyssey G4 25″ IPS 240hz
+              </h3>
+              <p class="card-text">Precio $145.860</p>
+              <span>EN STOCK</span>
+              <button class="card-btn">Comprar</button>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!---Sección Servicio Tecnico-->
-      <h2 class="service-title">SERVICIO TÉCNICO</h2>
       <section id="Service">
-        <div class="cont-service">
-          <i class="fa-solid fa-screwdriver-wrench icon-service"></i>
-          <p class="service-text">Instalación de software para Mac y Windows</p>
-          <button class="service-btn">SOLICITAR PRESUPUESTO</button>
-        </div>
+        <h2 class="service-title">SERVICIO TÉCNICO</h2>
+        <div class="cont-services">
+          <div class="cont-service">
+            <i class="fa-solid fa-screwdriver-wrench icon-service"></i>
+            <p class="service-text">
+              Instalación de software para Mac y Windows
+            </p>
+            <button class="service-btn">SOLICITAR PRESUPUESTO</button>
+          </div>
 
-        <!--- Back Up --->
-        <div class="cont-service">
-          <i class="fa-solid fa-cloud-arrow-up icon-service"></i>
-          <p class="service-text">Servicio de Back Up</p>
-          <h4 class="service-info">
-            Un respaldo seguro para tus archivos.
-          </h4>
-          <button class="service-btn">SOLICITAR PRESUPUESTO</button>
-        </div>
+          <!--- Back Up --->
+          <div class="cont-service">
+            <i class="fa-solid fa-cloud-arrow-up icon-service"></i>
+            <p class="service-text">Servicio de Back Up</p>
+            <h4 class="service-info">Un respaldo seguro para tus archivos.</h4>
+            <button class="service-btn">SOLICITAR PRESUPUESTO</button>
+          </div>
 
-        <!--- Mantenimiento --->
-        <div class="cont-service">
-          <i class="fa-solid fa-microchip icon-service"></i>
-          <p class="service-text">Mantenimiento y reparación de hardware</p>
-          <h4 class="service-info">
-            Intercambio de piezas, pantallas y discos.
-          </h4>
-          <button class="service-btn">SOLICITAR PRESUPUESTO</button>
-        </div>
+          <!--- Mantenimiento --->
+          <div class="cont-service">
+            <i class="fa-solid fa-microchip icon-service"></i>
+            <p class="service-text">Mantenimiento y reparación de hardware</p>
+            <h4 class="service-info">
+              Intercambio de piezas, pantallas y discos.
+            </h4>
+            <button class="service-btn">SOLICITAR PRESUPUESTO</button>
+          </div>
 
-        <!--- Actualización de Hardware --->
-        <div class="cont-service">
-          <i class="fa-brands fa-space-awesome icon-service"></i>
-          <p class="service-text">Actualización de Hardware</p>
-          <h4 class="service-info">
-            Mejoras y upgrades en tus equipos RAM,SSD,etc.
-          </h4>
-          <button class="service-btn">SOLICITAR PRESUPUESTO</button>
+          <!--- Actualización de Hardware --->
+          <div class="cont-service">
+            <i class="fa-brands fa-space-awesome icon-service"></i>
+            <p class="service-text">Actualización de Hardware</p>
+            <h4 class="service-info">
+              Mejoras y upgrades en tus equipos RAM,SSD,etc.
+            </h4>
+            <button class="service-btn">SOLICITAR PRESUPUESTO</button>
+          </div>
         </div>
       </section>
 
       <!--- Sección Contacto-->
       <section id="Contact">
+        <h2>Contacto</h2>
         <div class="info-container">
-          <h2>Contacto</h2>
           <div class="contact-info-container">
             <div class="info-column">
-              <h3>Encontranos en los principales shoppings de la ciudad</h3>
-              <p> <i class="fa fa-location-dot icon-info"></i> (Casa Central) Alto Rosario Shopping, Junin 501,Rosario.</p>
-              <p> <i class="fa fa-location-dot icon-info"></i> Portal Rosario Shopping, Nansen 323,Rosario.</p>
-              <p> <i class="fa fa-location-dot icon-info"></i>Paso del Bosque, Av Sorrento 7000,Rosario.</p>
-              <p> <i class="fa fa-location-dot icon-info"></i>Shopping del Siglo, Córrdoba 1643,Rosario.</p>
-
+              <h3>Contactanos a traves de</h3>
+              <p>
+                <i class="fa-solid fa-envelopes-bulk icon-info"></i
+                >mbc@gmail.com
+              </p>
+              <p>
+                <i class="fa-solid fa-mobile-screen-button icon-info"></i>(341)
+                2805331
+              </p>
+              <a href="#"
+                ><i class="fa-brands fa-square-twitter icon-info"></i>Twitter</a
+              >
+              <a href="#"
+                ><i class="fa-brands fa-square-facebook icon-info"></i
+                >Facebok</a
+              >
+              <a href="##"
+                ><i class="fa-brands fa-square-instagram icon-info"></i
+                >Instagram</a
+              >
+              <a href="#"
+                ><i class="fa-brands fa-square-whatsapp icon-info"></i
+                >WhatsApp</a
+              >
+              <a href="#"
+                ><i class="fa-solid fa-globe icon-info"></i>Sitio Oficial</a
+              >
             </div>
             <div class="info-column">
-              <h3>Contactanos a tráves de </h3>
-              <p><i class="fa-solid fa-envelopes-bulk icon-info"></i>milobytecomputacion@gmail.com</p>
-              <p><i class="fa-solid fa-mobile-screen-button icon-info"></i>(341) 2805331</p>
-              <a href="#"><i class="fa-brands fa-square-twitter icon-info"></i>Twitter</a>
-              <a href="#"><i class="fa-brands fa-square-facebook icon-info"></i>Facebok</a>
-              <a href="##"><i class="fa-brands fa-square-instagram icon-info"></i>Instagram</a>
-              <a href="#"><i class="fa-brands fa-square-whatsapp icon-info"></i>WhatsApp</a>
-              <a href="#"><i class="fa-solid fa-globe icon-info"></i>Sitio Oficial</a>
-
+              <h3>Encontranos en los principales shoppings de la ciudad</h3>
+              <p>
+                <i class="fa fa-location-dot icon-info"></i> (Casa Central) Alto
+                Rosario Shopping, Junin 501,Rosario.
+              </p>
+              <p>
+                <i class="fa fa-location-dot icon-info"></i> Portal Rosario
+                Shopping, Nansen 323,Rosario.
+              </p>
+              <p>
+                <i class="fa fa-location-dot icon-info"></i>Paso del Bosque, Av
+                Sorrento 7000,Rosario.
+              </p>
+              <p>
+                <i class="fa fa-location-dot icon-info"></i>Shopping del Siglo,
+                Córrdoba 1643,Rosario.
+              </p>
             </div>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.891632146496!2d-60.671581989306304!3d-32.92746127080872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping!5e0!3m2!1ses!2sar!4v1686623342786!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.891632146496!2d-60.671581989306304!3d-32.92746127080872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654abc3ab1d5f%3A0x2f90ce97db2c5a6!2sAlto%20Rosario%20Shopping!5e0!3m2!1ses!2sar!4v1686623342786!5m2!1ses!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <!--- Footer-->
@@ -701,7 +743,6 @@
           Todos los derechos reservados &copy; 2023 Milo Byte Computación &reg;
         </p>
       </div>
-     
     </footer>
     <!--- Fontawesome ---->
     <script
