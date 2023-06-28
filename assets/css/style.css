@@ -666,6 +666,16 @@ iframe {
     width: 7rem;
   }
 }
+/* 576px */
+@media (max-width: 576px) {
+  .link {
+    width: 6rem;
+    margin: 10px 10px;
+  }
+  .link > a {
+    font-size: 1.12rem;
+  }
+}
 /* 768px */
 @media (max-width: 768px) {
   .logo {
