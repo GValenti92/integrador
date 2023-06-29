@@ -969,10 +969,7 @@ span {
   /* sección soporte */
 
   #Service {
-    margin-top: 20px;  
-    }
-  .cont-services {
-    margin: 10px;
+    margin-top: 20px;
   }
 
   .cont-service {
@@ -987,7 +984,6 @@ span {
   }
   .icon-service {
     font-size: 3rem;
-    
   }
   .service-btn {
     font-size: 0.87rem;
@@ -1021,10 +1017,9 @@ span {
   .mapa iframe {
     height: 200px;
   }
-  }
-  /* footer */
-  .copyrigth-text {
-    font-size: 1rem;
-    margin-top: 20px;
-  }
+}
+/* footer */
+.copyrigth-text {
+  font-size: 1rem;
+  margin-top: 20px;
 }
