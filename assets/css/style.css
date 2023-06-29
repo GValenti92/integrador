@@ -298,17 +298,18 @@ span {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 40px;
-  gap: 50px;
+  gap: 30px;
 }
 .cont-services {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
+  align-items: baseline;
+  gap: 8px;
 }
 
 .cont-service {
@@ -698,41 +699,60 @@ span {
   .cart-item img {
     width: 7rem;
   }
-}
-/* 576px */
-@media (max-width: 576px) {
-  .link {
-    width: 6rem;
-    margin: 10px 10px;
+  .mapa {
+    width: 70%;
   }
-  .link > a {
+  .mapa iframe {
+    height: 400px;
+  }
+  .cont-service {
+    max-width: 22%;
+  }
+  .icon-service {
+    font-size: 4rem;
+  }
+  .service-text {
     font-size: 1.12rem;
+  }
+  .service-info {
+    font-size: 1.12rem;
+  }
+  .service-btn {
+    font-size: 1rem;
+  }
+  .mapa iframe {
+    height: 350px;
   }
 }
 /* 768px */
 @media (max-width: 768px) {
+  /*  logo */
   .logo {
     width: 8.12rem;
     height: 6.25rem;
   }
+  /* seccion hero o portada */
   .hero-title {
     font-size: 2.25rem;
   }
   .hero-text {
     font-size: 1.37rem;
   }
+  /* seccion acerca de  */
   .about-title {
     font-size: 1.87rem;
   }
   .about-text {
     font-size: 1.37rem;
   }
+  /* categorias */
   .categorias > h2 {
     font-size: 1.87rem;
   }
   .categorias-container > a {
     font-size: 1.12rem;
   }
+  /* cards */
   .card-title {
     font-size: 1.37rem;
   }
@@ -748,36 +768,58 @@ span {
   .card-btn {
     font-size: 1.37rem;
   }
+  /* seccion soporte */
+  .cont-services {
+    gap: 12px;
+  }
+  .service-info {
+    font-size: 1.1rem;
+  }
+
   .service-title {
-    font-size: 1.87rem;
+    font-size: 1.37rem;
   }
   .service-text {
-    font-size: 1.37rem;
-  }
-  .service-btn {
     font-size: 1rem;
   }
+  .service-btn {
+    font-size: 0.87rem;
+  }
+  /* seccion contacto */
+  #Contact h2 {
+    font-size: 1.7rem;
+  }
   .info-container h2 {
-    font-size: 1.87rem;
+    font-size: 1.37rem;
   }
   .info-column h3 {
-    font-size: 1.37rem;
+    font-size: 1.2rem;
   }
   .info-column p,
   .info-column a {
     font-size: 1.12rem;
   }
-  iframe {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+  .mapa iframe {
+    height: 300px;
   }
   .copyrigth-text {
     font-size: 1.25rem;
   }
 }
-/* desde 320px  */
-@media (min-width: 320px) and (max-width: 415px) {
+
+/* 576px */
+@media (max-width: 576px) {
+  .link {
+    width: 6rem;
+    margin: 10px;
+  }
+  .link > a {
+    font-size: 1.12rem;
+  }
+}
+/* desde 320px  hasta 475px */
+@media (min-width: 320px) and (max-width: 475px) {
+  /* items del carrito */
   .cart {
     width: 11rem;
   }
@@ -863,6 +905,7 @@ span {
   .btn {
     font-size: 1rem;
   }
+  /* logo y descripcion login */
   .login {
     font-size: 1rem;
     text-align: center;
@@ -874,13 +917,14 @@ span {
     font-size: 1rem;
     padding: 5px;
   }
+  /* seccion hero o portada */
   .hero-title {
     font-size: 1.25rem;
   }
   .hero-text {
     font-size: 1.18rem;
   }
-
+  /* seccion acerca de  */
   .about-title {
     font-size: 1.25rem;
     margin-top: 25px;
@@ -888,6 +932,7 @@ span {
   .about-text {
     font-size: 1.18rem;
   }
+  /* productos */
   .title-products-cont {
     width: 80%;
     margin-top: 10px;
@@ -896,6 +941,7 @@ span {
     font-size: 1.25rem;
     margin-top: 15px;
   }
+  /* categorias */
   .categorias-container {
     margin-top: 20px;
     gap: 10px;
@@ -910,6 +956,7 @@ span {
   .title-cont {
     font-size: 1.12rem;
   }
+  /* cards */
   .card {
     max-width: 8rem;
   }
@@ -919,51 +966,47 @@ span {
   .card-img {
     max-width: 6rem;
   }
+  /* sección soporte */
+
   #Service {
-    margin-top: 20px;
+    margin-top: 20px;  
+    }
+  .cont-services {
+    margin: 10px;
   }
+
   .cont-service {
-    max-width: 12rem;
-    margin: 10px 30px;
+    max-width: 15%;
+    margin: 10px;
+    gap: 10px;
   }
+
   .service-title {
     max-width: 68%;
     font-size: 1.25rem;
   }
   .icon-service {
-    max-width: 4rem;
     font-size: 3rem;
-    margin-bottom: 10px;
+    
   }
   .service-btn {
     font-size: 0.87rem;
     padding: 3px;
   }
-  #Contact {
-    max-width: 10rem;
-    margin: 0;
-    padding: 0;
-  }
-  .contact-info-container {
-    gap: 24px;
-  }
-  .info-container {
-    max-width: 9.37rem;
-    margin: 0 auto;
-    gap: 5px;
-  }
+  /* seccion contacto */
+
   .info-container h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin: 15px;
   }
   .info-column h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     margin: 15px;
   }
   .info-column p,
@@ -972,15 +1015,16 @@ span {
     margin: 10px;
   }
   .icon-info {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-  iframe {
-    max-width: 15rem;
-    margin: 0 auto;
-    display: block;
+  /* mapa */
+  .mapa iframe {
+    height: 200px;
   }
+  }
+  /* footer */
   .copyrigth-text {
-    font-size: 1.12rem;
+    font-size: 1rem;
     margin-top: 20px;
   }
 }
